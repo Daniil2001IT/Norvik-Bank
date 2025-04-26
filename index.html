@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js/main.js"></script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header open">
+        <div class="container"></div>
+
+        <!-- Burger menu -->
+        <div class="burger-menu">
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Частным клиентам</a></li>
+
+                <li><a class="mobile-menu__link" href="#">Бизнесу</a></li>
+
+                <li><a class="mobile-menu__link" href="#">О банке</a></li>
+
+                <li> <img class="nav-img" src="images/svg/Navigation.svg" alt="drop-down menu" class="nav-img">
+                    <a href="#" class="nav__link ">
+                        Москва
+                    </a>
+
+                    <img class="nav-img" src="images/svg/drop-down menu.svg">
+                </li>
+
+
+                <li> <img class="nav-img" src="images/svg/Navigation2.svg" class="nav-img">
+
+                    <a href="#" class="nav__link">
+                        Офисы
+                    </a>
+                </li>
+
+
+                <li> <img src="images/svg/Phone.svg" class="nav-img">
+
+                    <a href="tel:+7(800)1001777" class="nav__link">
+                        8 (800) 1001-777
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="header__inner">
+
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link
+                    header__link_active">
+                        Частным клиентам
+                    </a>
+                </li>
+
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        Бизнесу
+                    </a>
+                </li>
+
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        О банке
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <nav class="nav">
+                <div class="nav__wrapper">
+                    <ul class="nav__list">
+
+                        <li class="nav-item">
+
+                            <img class="nav-img" src="images/svg/Navigation.svg" alt="drop-down menu" class="nav-img">
+
+                            <a href="#" class="nav__link ">
+                                Москва
+                            </a>
+
+                            <img class="nav-img" src="images/svg/drop-down menu.svg">
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <img class="nav-img" src="images/svg/Navigation2.svg" class="nav-img">
+
+                            <a href="#" class="nav__link">
+                                Офисы
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <img src="images/svg/Phone.svg" class="nav-img">
+
+                            <a href="tel:+7(800)1001777" class="nav__link">
+                                8 (800) 1001-777
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Nav-bottom - Start -->
+        <nav class="nav-bottom">
+            <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" width="174" height="22" viewBox="0 0 174 22"
+                fill="none">
+                <g clip-path="url(#clip0_168_155)">
+                    <path
+                        d="M4.80002 19.33C5.67645 19.993 6.62598 20.5533 7.63002 21V15H1.46002C2.12645 16.7386 3.2876 18.2439 4.80002 19.33Z"
+                        fill="#B92032" />
+                    <path
+                        d="M1.00001 11.13C1.00001 11.49 1.00001 11.88 1.00001 12.26C1.00001 12.41 1.00001 12.55 1.00001 12.69C1.00001 12.83 1.00001 12.97 1.00001 13.1H7.63001V11.1V10.39H1.00001C1.00001 10.61 1.00001 10.85 0.950012 11.1"
+                        fill="#0E152D" />
+                    <path
+                        d="M167.37 13.7L172.65 6.88H169.56L165.32 12.36L163.39 13.05V6.88H160.64V20.82H163.39V15.71L165.11 15.09L169.65 20.82H173.04L167.37 13.7Z"
+                        fill="#0E152D" />
+                    <path d="M154.53 12.46H147.87V6.88H145.1V20.82H147.87V14.94H154.53V20.82H157.28V6.88H154.53V12.46Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M99.27 13.7L104.55 6.88H101.47L97.22 12.36L95.29 13.05V6.88H92.54V20.82H95.29V15.71L97.01 15.09L101.55 20.82H104.94L99.27 13.7Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M79.84 16.29H79.82V6.88H77.05V20.82H79.44L86.43 11.44H86.46V20.82H89.22V6.88H86.83L79.84 16.29Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M71.91 13.65C72.5256 13.4301 73.0574 13.0241 73.4319 12.4883C73.8064 11.9526 74.0049 11.3136 74 10.66C74 8.61 72.54 6.88 69.4 6.88H62.15V20.82H69.5C72.76 20.82 74.39 19.25 74.39 16.82C74.4095 16.0857 74.1726 15.3676 73.72 14.7891C73.2674 14.2106 72.6274 13.8078 71.91 13.65ZM64.91 9.31001H69.4C69.6253 9.28749 69.8529 9.31275 70.0678 9.38415C70.2827 9.45556 70.4801 9.57148 70.6471 9.72437C70.8142 9.87726 70.9471 10.0637 71.0372 10.2714C71.1273 10.4792 71.1726 10.7036 71.17 10.93C71.1673 11.169 71.1146 11.4047 71.0151 11.622C70.9157 11.8393 70.7719 12.0334 70.5928 12.1916C70.4138 12.3499 70.2036 12.469 69.9758 12.541C69.7479 12.6131 69.5075 12.6366 69.27 12.61H64.9L64.91 9.31001ZM69.53 18.41H64.9V14.87H69.37C70.81 14.87 71.58 15.56 71.58 16.66C71.5709 16.9142 71.509 17.1637 71.3981 17.3925C71.2872 17.6214 71.1298 17.8247 70.936 17.9893C70.7422 18.154 70.5161 18.2765 70.2723 18.3489C70.0285 18.4213 69.7723 18.4421 69.52 18.41H69.53Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M53.63 6.88H47.19V20.82H49.94V17.42H53.63C57.37 17.42 59.7 15.42 59.7 12.15C59.7 8.88 57.37 6.88 53.63 6.88ZM53.63 14.88H49.94V9.4H53.61C55.61 9.4 56.86 10.4 56.86 12.15C56.86 13.9 55.58 14.89 53.61 14.89L53.63 14.88Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M139.17 8.88997C138.611 8.11031 137.869 7.47942 137.009 7.05236C136.15 6.62531 135.199 6.41506 134.24 6.43997C129.59 6.43997 127.09 9.88997 127.09 13.85C127.09 17.81 129.59 21.27 134.24 21.27C135.198 21.2917 136.146 21.0811 137.005 20.6562C137.864 20.2313 138.606 19.6046 139.17 18.83V20.83H141.78V6.87997H139.17V8.88997ZM139 14.1C139 17.04 137.25 18.77 134.57 18.77C131.74 18.77 129.9 16.82 129.9 13.85C129.9 10.88 131.74 8.93997 134.57 8.93997C137.23 8.93997 139 10.71 139 13.61V14.1Z"
+                        fill="#0E152D" />
+                    <path
+                        d="M37 6.44002C36.0051 6.38534 35.0098 6.53832 34.0773 6.88922C33.1448 7.24012 32.2955 7.78127 31.5835 8.47824C30.8714 9.17521 30.3123 10.0127 29.9415 10.9376C29.5708 11.8624 29.3966 12.8542 29.43 13.85C29.3951 14.8462 29.5682 15.8388 29.9384 16.7643C30.3086 17.6898 30.8677 18.528 31.5801 19.2252C32.2924 19.9225 33.1423 20.4636 34.0755 20.814C35.0088 21.1643 36.0048 21.3162 37 21.26C37.9952 21.3162 38.9913 21.1643 39.9245 20.814C40.8577 20.4636 41.7076 19.9225 42.4199 19.2252C43.1323 18.528 43.6914 17.6898 44.0616 16.7643C44.4318 15.8388 44.605 14.8462 44.57 13.85C44.6034 12.8542 44.4292 11.8624 44.0585 10.9376C43.6877 10.0127 43.1286 9.17521 42.4166 8.47824C41.7045 7.78127 40.8553 7.24012 39.9227 6.88922C38.9902 6.53832 37.9949 6.38534 37 6.44002ZM37 18.77C36.3568 18.7931 35.7159 18.68 35.1194 18.4381C34.5229 18.1963 33.9842 17.8312 33.5385 17.3667C33.0929 16.9022 32.7505 16.3488 32.5336 15.7428C32.3167 15.1368 32.2303 14.4918 32.28 13.85C32.2506 13.2126 32.3508 12.5758 32.5745 11.9782C32.7983 11.3805 33.1408 10.8345 33.5815 10.373C34.0223 9.91149 34.552 9.54416 35.1387 9.29319C35.7254 9.04222 36.3569 8.91282 36.995 8.91282C37.6331 8.91282 38.2646 9.04222 38.8513 9.29319C39.438 9.54416 39.9678 9.91149 40.4085 10.373C40.8492 10.8345 41.1918 11.3805 41.4155 11.9782C41.6392 12.5758 41.7394 13.2126 41.71 13.85C41.7596 14.4909 41.6734 15.135 41.4571 15.7403C41.2409 16.3457 40.8993 16.8985 40.4548 17.3629C40.0103 17.8272 39.4728 18.1925 38.8775 18.435C38.2822 18.6775 37.6424 18.7916 37 18.77Z"
+                        fill="#0E152D" />
+                    <path d="M23.62 10.4H15.32V2.42999H12.24V20.82H15.32V13.14H23.62V20.82H26.72V2.42999H23.62V10.4Z"
+                        fill="#0E152D" />
+                    <path d="M7.63 2.42999H2.13L1.31 8.52999H7.63V2.42999Z" fill="#B92032" />
+                    <path
+                        d="M117.69 7.33998C116.878 7.33386 116.07 7.445 115.29 7.66998L113.29 8.66998C113.75 6.37998 114.86 5.02998 116.41 4.71998L123.61 3.26998V0.47998L117.2 1.81998C113.28 2.62998 111.62 4.52998 110.76 7.51998C110.275 9.24396 110.042 11.0292 110.07 12.82C110.07 18.04 112.84 21.27 117.48 21.27C121.81 21.27 124.73 18.27 124.73 14.27C124.772 13.3392 124.619 12.4099 124.278 11.5426C123.938 10.6752 123.419 9.88912 122.755 9.23549C122.091 8.58186 121.297 8.07529 120.424 7.74872C119.552 7.42215 118.62 7.28288 117.69 7.33998ZM117.6 18.78C114.38 18.78 112.93 16.17 112.93 13.26C112.93 12.62 112.93 12.14 112.93 11.63L116.13 9.99998C116.796 9.79152 117.502 9.74372 118.19 9.8605C118.878 9.97727 119.529 10.2553 120.088 10.6718C120.648 11.0884 121.102 11.6315 121.411 12.2569C121.721 12.8823 121.878 13.5722 121.87 14.27C121.87 17.27 120.05 18.78 117.6 18.78Z"
+                        fill="#0E152D" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_168_155">
+                        <rect width="174" height="22" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <ul class="nav-bottom__list">
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Кредиты</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Вклады</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Карты</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Сервисы</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Тарифы</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Прочие услуги</a>
+                </li>
+
+                <li class="nav-bottom__item">
+                    <a href="#" class="nav-bottom__link">Справочная информация</a>
+                </li>
+            </ul>
+
+
+            <span href="#" class="nav-bottom__btn">
+
+                <svg class="nav-bottom__img" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 16 16" fill="none">
+                    <path
+                        d="M7.99996 10L9.99996 8.00002M9.99996 8.00002L7.99996 6.00002M9.99996 8.00002H2.66663M5.99996 4.83241V4.80015C5.99996 4.05341 5.99996 3.67977 6.14528 3.39455C6.27311 3.14367 6.47694 2.93984 6.72782 2.81201C7.01304 2.66669 7.38669 2.66669 8.13342 2.66669H11.2001C11.9468 2.66669 12.3197 2.66669 12.6049 2.81201C12.8558 2.93984 13.0603 3.14367 13.1881 3.39455C13.3333 3.67949 13.3333 4.05268 13.3333 4.79796V11.2024C13.3333 11.9477 13.3333 12.3203 13.1881 12.6053C13.0603 12.8562 12.8558 13.0603 12.6049 13.1882C12.32 13.3334 11.9473 13.3334 11.202 13.3334H8.13123C7.38595 13.3334 7.01276 13.3334 6.72782 13.1882C6.47694 13.0603 6.27311 12.856 6.14528 12.6051C5.99996 12.3199 5.99996 11.9468 5.99996 11.2V11.1667"
+                        stroke="#336FEE" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="nav-bottom__text">Интернет-банк</span>
+            </span>
+        </nav>
+        <!-- Nav-bottom - End -->
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <!-- Sub-title Start -->
+        <section class="sub-title">
+            <div class="container">
+                <ul class="sub-title__list">
+
+                    <li class="sub-title__item">
+                        <a href="#" class="sub-title__link">Главная /</a>
+                    </li>
+
+                    <li class="sub-title__item">
+                        <a href="#" class="sub-title__link">Кредиты /</a>
+                    </li>
+
+                    <li class="sub-title__item
+                    sub-title__item_active">
+                        <a href="#" class="sub-title__link">Оплата кредита</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Sub-title End -->
+
+
+        <!-- Title-img Start -->
+        <section class="title-img">
+            <div class="container">
+                <div class="title-img__size">
+                    <img class="title-img__img" src="images/png/title-img.png" alt="title-img">
+
+                    <div class="title-img__wrapper">
+                        <h1 class="text-title">
+                            Удобные способы <br> оплаты
+                        </h1>
+
+                        <p class="text-title__info">
+                            Оплата кредита «Норвик Банка» с помощью мобильного приложения и сервиса сайта
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Title-img End -->
+
+
+
+        <!-- Payment Start -->
+
+        <section class="payment">
+            <div class="container">
+                <ul class="payment__list">
+
+                    <li class="payment__item">
+                        <a href="#" class="payment__link">
+                            <span class="payment__underline">
+                                Оплата кредита в приложении</span>
+                        </a>
+                    </li>
+
+                    <li class="payment__item">
+                        <a href="#" class="payment__link">
+                            <span class="payment__gray-text"> Оплата кредита на сайте </span>
+                        </a>
+                    </li>
+
+                    <li class="payment__item">
+                        <a href="#" class="payment__link">
+                            <span class="payment__gray-text"> Оплата кредита в офисе</span>
+                        </a>
+                    </li>
+
+                    <li class="payment__item">
+                        <a href="#" class="payment__link">
+                            <span class="payment__gray-text"> Досрочное погашение </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <hr class="payment__hr">
+
+                <h1 class="payment__h1">
+                    <span class="payment__h1">
+                        Оплата кредита в мобильном приложении </span>
+                </h1>
+
+                <div class="payment__circle-wrapper">
+                    <img class="payment__circle" src="images/png/payment__circle1.png" alt="circle">
+
+                    <p class="payment__title">
+                        Пополните счет для
+                        погашения кредита
+                    </p>
+                </div>
+
+
+                <div class="payment__step">
+                    <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                    <p class="payment__info">
+                        Установите мобильное приложение Норвик Банка и пополните свой счет, с которого вы планируете
+                        оплатить кредит, нажав кнопку «Пополнение счета через СБП» и выбрав банк, из которого вы хотите
+                        перевести деньги в погашение кредита
+                    </p>
+                </div>
+
+
+                <div class="payment__step">
+                    <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                    <p class="payment__info">
+                        Либо зайдите в приложение иного банка и сделайте перевод по СБП на свой счет в Норвик Банке
+                    </p>
+                </div>
+
+                <p class="payment__title-cards">
+                    Скачать мобильное приложение Норвик Банка
+                </p>
+
+                <div class="payment__cards">
+                    <div class="payment__cards-inner">
+
+
+
+                        <div class="payment__card">
+
+                            <div class="payment__wrapper">
+                                <img src="images/svg/Apple.svg" alt="Apple" class="payment__card-logo">
+
+                                <a href="#" class="payment__card-link">
+                                    AppStore
+                                </a>
+                            </div>
+
+                            <img src="images/png/card-1.png" alt="card-1" class="payment__card-img">
+                        </div>
+
+
+                        <div class="payment__card">
+
+                            <div class="payment__wrapper">
+                                <img src="images/svg/payment__card-play.svg" alt="Play" class="payment__card-logo">
+
+                                <a href="#" class="payment__card-link">
+                                    GooglePlay
+                                </a>
+                            </div>
+
+                            <img src="images/png/card-1.png" alt="card-1" class="payment__card-img">
+                        </div>
+
+
+                        <div class="payment__card">
+
+                            <div class="payment__wrapper">
+                                <img src="images/svg/payment__card-RuStory.svg" alt="RuStory"
+                                    class="payment__card-logo">
+
+                                <a href="#" class="payment__card-link">
+                                    RuStore
+                                </a>
+                            </div>
+
+
+                            <img src="images/png/card-1.png" alt="card-1" class="payment__card-img">
+                        </div>
+
+
+                        <div class="payment__card">
+                            <div class="payment__wrapper">
+                                <img src="images/svg/payment__card-vhod.svg" alt="Vhod" class="payment__card-logo">
+
+                                <a href="#" class="payment__card-link">
+                                    Интернет-банк
+                                </a>
+                            </div>
+
+                            <img src="images/png/card-1.png" alt="card-1" class="payment__card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Payment End -->
+
+
+        <!-- Autopayments-Start -->
+        <section class="autopayments">
+            <section class="autopayments__container">
+
+
+
+                <div class="autopayments__cards">
+
+                    <div class="autopayments__card">
+
+                        <img class="autopayments__circle" src="images/png/autopayments__circle2.png" alt="circle">
+
+                        <img class="autopayments__card-one" src="images/png/Autopayments__img1.png"
+                            alt="Autopayments__img2">
+                    </div>
+
+                    <div class="autopayments__card">
+                        <img class="autopayments__circle" src="images/png/autopayments__circle3.png" alt="circle">
+
+                        <img class="autopayments__card-two" src="images/png/Autopayments__img2.png"
+                            alt="Autopayments__img3">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="autopayments-list">
+                <div class="autopayments__columns">
+                    <div class="autopayments__column">
+                        <h3 class="autopayments__title">
+                            Оплатите кредит
+                        </h3>
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Войдите в мобильное приложение/интернет-банк Норвик <br> Банка
+                            </p>
+                        </div>
+
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Выберите кредит на главном экране и нажмите «Оплатить».
+                            </p>
+                        </div>
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Выберите счёт или карту для перевода.
+                            </p>
+                        </div>
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Введите сумму, поставьте флажок в поле «Сохранить <br> платеж как шаблон» и подтвердите
+                                операцию.
+                            </p>
+                        </div>
+
+
+
+                        <p class="autopayments__info
+                         autopayments__info_strong">
+                            Комиссия — 0%, срок зачисления — мгновенно
+                        </p>
+                    </div>
+
+
+                    <div class="autopayments__column-two">
+                        <h3 class="autopayments__title
+                        autopayments__title_two">
+                            Настройте автоплатеж
+                        </h3>
+
+                        <p class="autopayments__info
+                         autopayments__info_strong">
+                            В мобильном приложении Норвик Банка выберите «Оплата» → <br> «Шаблоны» → «Редактирование».
+                        </p>
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Включите параметр «Повторять платёж по расписанию».
+                            </p>
+                        </div>
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Задайте удобную частоту и период для повтора платежа.
+                            </p>
+                        </div>
+
+
+
+                        <div class="autopayments__step">
+                            <img class="payment__marker" src="images/svg/payment__marker.svg" alt="circle">
+
+                            <p class="autopayments__info">
+                                Нажмите «Подключить».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+            </section>
+            <!-- Autopayments-End -->
+    </main>
+
+
+    <!-- Footer-Start -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__innerr">
+
+                <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="174" height="23" viewBox="0 0 174 23"
+                    fill="none">
+                    <g clip-path="url(#clip0_220_348)">
+                        <path d="M7.63 2.92993H2.13L1.31 9.02993H7.63V2.92993Z" fill="#E51530" />
+                        <path
+                            d="M4.80002 19.83C5.67645 20.493 6.62598 21.0533 7.63002 21.5V15.5H1.46002C2.12645 17.2386 3.2876 18.7439 4.80002 19.83Z"
+                            fill="#E51530" />
+                        <path
+                            d="M1.00001 11.6299C1.00001 11.9899 1.00001 12.3799 1.00001 12.7599C1.00001 12.9099 1.00001 13.0499 1.00001 13.1899C1.00001 13.3299 1.00001 13.4699 1.00001 13.5999H7.63001V11.5999V10.8899H1.00001C1.00001 11.1099 1.00001 11.3499 0.950012 11.5999"
+                            fill="#130951" />
+                        <path
+                            d="M53.63 7.37988H47.19V21.3199H49.94V17.9199H53.63C57.37 17.9199 59.7 15.9199 59.7 12.6499C59.7 9.37988 57.37 7.37988 53.63 7.37988ZM53.63 15.3799H49.94V9.89988H53.61C55.61 9.89988 56.86 10.8999 56.86 12.6499C56.86 14.3999 55.58 15.3899 53.61 15.3899L53.63 15.3799Z"
+                            fill="#130951" />
+                        <path
+                            d="M23.62 10.8999H15.32V2.92993H12.24V21.3199H15.32V13.6399H23.62V21.3199H26.72V2.92993H23.62V10.8999Z"
+                            fill="#130951" />
+                        <path
+                            d="M154.53 12.9599H147.87V7.37988H145.1V21.3199H147.87V15.4399H154.53V21.3199H157.28V7.37988H154.53V12.9599Z"
+                            fill="#130951" />
+                        <path
+                            d="M139.17 9.38997C138.611 8.61031 137.869 7.97942 137.009 7.55236C136.15 7.12531 135.199 6.91506 134.24 6.93997C129.59 6.93997 127.09 10.39 127.09 14.35C127.09 18.31 129.59 21.77 134.24 21.77C135.198 21.7917 136.146 21.5811 137.005 21.1562C137.864 20.7313 138.606 20.1046 139.17 19.33V21.33H141.78V7.37997H139.17V9.38997ZM139 14.6C139 17.54 137.25 19.27 134.57 19.27C131.74 19.27 129.9 17.32 129.9 14.35C129.9 11.38 131.74 9.43997 134.57 9.43997C137.23 9.43997 139 11.21 139 14.11V14.6Z"
+                            fill="#130951" />
+                        <path
+                            d="M99.27 14.1999L104.55 7.37988H101.47L97.22 12.8599L95.29 13.5499V7.37988H92.54V21.3199H95.29V16.2099L97.01 15.5899L101.55 21.3199H104.94L99.27 14.1999Z"
+                            fill="#130951" />
+                        <path
+                            d="M167.37 14.1999L172.65 7.37988H169.56L165.32 12.8599L163.39 13.5499V7.37988H160.64V21.3199H163.39V16.2099L165.11 15.5899L169.65 21.3199H173.04L167.37 14.1999Z"
+                            fill="#130951" />
+                        <path
+                            d="M79.84 16.7899H79.82V7.37988H77.05V21.3199H79.44L86.43 11.9399H86.46V21.3199H89.22V7.37988H86.83L79.84 16.7899Z"
+                            fill="#130951" />
+                        <path
+                            d="M71.91 14.1499C72.5256 13.9299 73.0574 13.524 73.4319 12.9882C73.8064 12.4525 74.0049 11.8135 74 11.1599C74 9.10988 72.54 7.37988 69.4 7.37988H62.15V21.3199H69.5C72.76 21.3199 74.39 19.7499 74.39 17.3199C74.4095 16.5856 74.1726 15.8675 73.72 15.289C73.2674 14.7105 72.6274 14.3077 71.91 14.1499ZM64.91 9.80988H69.4C69.6253 9.78737 69.8529 9.81263 70.0678 9.88403C70.2827 9.95543 70.4801 10.0714 70.6471 10.2242C70.8142 10.3771 70.9471 10.5635 71.0372 10.7713C71.1273 10.979 71.1726 11.2035 71.17 11.4299C71.1673 11.6688 71.1146 11.9046 71.0151 12.1219C70.9157 12.3392 70.7719 12.5332 70.5928 12.6915C70.4138 12.8498 70.2036 12.9688 69.9758 13.0409C69.7479 13.1129 69.5075 13.1364 69.27 13.1099H64.9L64.91 9.80988ZM69.53 18.9099H64.9V15.3699H69.37C70.81 15.3699 71.58 16.0599 71.58 17.1599C71.5709 17.4141 71.509 17.6635 71.3981 17.8924C71.2872 18.1213 71.1298 18.3246 70.936 18.4892C70.7422 18.6539 70.5161 18.7763 70.2723 18.8488C70.0285 18.9212 69.7723 18.942 69.52 18.9099H69.53Z"
+                            fill="#130951" />
+                        <path
+                            d="M37 6.94002C36.0051 6.88534 35.0098 7.03832 34.0773 7.38922C33.1448 7.74012 32.2955 8.28127 31.5835 8.97824C30.8714 9.67521 30.3123 10.5127 29.9415 11.4376C29.5708 12.3624 29.3966 13.3542 29.43 14.35C29.3951 15.3462 29.5682 16.3388 29.9384 17.2643C30.3086 18.1898 30.8677 19.028 31.5801 19.7252C32.2924 20.4225 33.1423 20.9636 34.0755 21.314C35.0088 21.6643 36.0048 21.8162 37 21.76C37.9952 21.8162 38.9913 21.6643 39.9245 21.314C40.8577 20.9636 41.7076 20.4225 42.4199 19.7252C43.1323 19.028 43.6914 18.1898 44.0616 17.2643C44.4318 16.3388 44.605 15.3462 44.57 14.35C44.6034 13.3542 44.4292 12.3624 44.0585 11.4376C43.6877 10.5127 43.1286 9.67521 42.4166 8.97824C41.7045 8.28127 40.8553 7.74012 39.9227 7.38922C38.9902 7.03832 37.9949 6.88534 37 6.94002ZM37 19.27C36.3568 19.2931 35.7159 19.18 35.1194 18.9381C34.5229 18.6963 33.9842 18.3312 33.5385 17.8667C33.0929 17.4022 32.7505 16.8488 32.5336 16.2428C32.3167 15.6368 32.2303 14.9918 32.28 14.35C32.2506 13.7126 32.3508 13.0758 32.5745 12.4782C32.7983 11.8805 33.1408 11.3345 33.5815 10.873C34.0223 10.4115 34.552 10.0442 35.1387 9.79319C35.7254 9.54222 36.3569 9.41282 36.995 9.41282C37.6331 9.41282 38.2646 9.54222 38.8513 9.79319C39.438 10.0442 39.9678 10.4115 40.4085 10.873C40.8492 11.3345 41.1918 11.8805 41.4155 12.4782C41.6392 13.0758 41.7394 13.7126 41.71 14.35C41.7596 14.9909 41.6734 15.635 41.4571 16.2403C41.2409 16.8457 40.8993 17.3985 40.4548 17.8629C40.0103 18.3272 39.4728 18.6925 38.8775 18.935C38.2822 19.1775 37.6424 19.2916 37 19.27Z"
+                            fill="#130951" />
+                        <path
+                            d="M117.69 7.83998C116.878 7.83386 116.07 7.945 115.29 8.16998L113.29 9.16998C113.75 6.87998 114.86 5.52998 116.41 5.21998L123.61 3.76998V0.97998L117.2 2.31998C113.28 3.12998 111.62 5.02998 110.76 8.01998C110.275 9.74396 110.042 11.5292 110.07 13.32C110.07 18.54 112.84 21.77 117.48 21.77C121.81 21.77 124.73 18.77 124.73 14.77C124.772 13.8392 124.619 12.9099 124.278 12.0426C123.938 11.1752 123.419 10.3891 122.755 9.73549C122.091 9.08186 121.297 8.57529 120.424 8.24872C119.552 7.92215 118.62 7.78288 117.69 7.83998ZM117.6 19.28C114.38 19.28 112.93 16.67 112.93 13.76C112.93 13.12 112.93 12.64 112.93 12.13L116.13 10.5C116.796 10.2915 117.502 10.2437 118.19 10.3605C118.878 10.4773 119.529 10.7553 120.088 11.1718C120.648 11.5884 121.102 12.1315 121.411 12.7569C121.721 13.3823 121.878 14.0722 121.87 14.77C121.87 17.77 120.05 19.28 117.6 19.28Z"
+                            fill="#130951" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_220_348">
+                            <rect width="174" height="22" fill="white" transform="translate(0 0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <div class="footer__wrapper">
+                    <a class="footer__tell" href="tel:8 800 100-17-77">
+                        8 800 100-17-77
+                    </a>
+
+                    <p class="footer__small-text">
+                        Звонок по России бесплатный
+                    </p>
+                </div>
+            </div>
+
+
+
+            <ul class="footer__list">
+                <li class="footer__list-item">
+
+                    <p class="footer__list-title">
+                        Норвик Стайл
+                    </p>
+
+                    <a href="#" class="footer__list-link">
+                        Финансовая свобода
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Мнение эксперта
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Развитие бизнеса
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Полезно знать
+                    </a>
+
+                </li>
+
+
+
+                <li class="footer__list-item">
+
+                    <p class="footer__list-title">
+                        Бизнес клиентам
+                    </p>
+
+                    <a href="#" class="footer__list-link">
+                        Обслуживание счета
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Кредиты
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Депозиты
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Зарплатный проект
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Эквайринг
+                    </a>
+
+                </li>
+
+
+                <li class="footer__list-item">
+
+                    <p class="footer__list-title">
+                        Частным клиентам
+                    </p>
+
+                    <a href="#" class="footer__list-link">
+                        Кредиты
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Ипотека
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Рефинансирование
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Вклады
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Обмен валюты
+                    </a>
+
+                </li>
+
+
+
+                <li class="footer__list-item">
+
+                    <p class="footer__list-title">
+                        Банк
+                    </p>
+
+                    <a href="#" class="footer__list-link">
+                        Наша команда
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Пресс-центр
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Открытая информация
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Партнерам
+                    </a>
+
+                    <a href="#" class="footer__list-link">
+                        Реквизиты
+                    </a>
+
+                </li>
+            </ul>
+
+
+            <ul class="footer__inline">
+
+                <li class="footer__inline-item">
+                    <a href="#" class="footer__inline-link">
+                        Реквизиты
+                    </a>
+                </li>
+
+                <li class="footer__inline-item">
+                    <a href="#" class="footer__inline-link">
+                        Адреса
+                    </a>
+                </li>
+
+                <li class="footer__inline-item">
+                    <a href="#" class="footer__inline-link">
+                        Открытая информация
+                    </a>
+                </li>
+
+                <li class="footer__inline-item">
+                    <a href="#" class="footer__inline-link">
+                        Вакансии
+                    </a>
+                </li>
+            </ul>
+
+
+            <p class="footer__info">
+                Список лиц, под контролем либо значительным влиянием которых находится банк (Информация о лицах, под
+                контролем либо значительным влиянием которых находится кредитная организация, соответствует информации,
+                направленной в Банк России для размещения на официальном сайте Банка России. Дата направления
+                06.07.2020) . Информация о процентных ставках по договорам банковского вклада с физическими лицами (в
+                соответствии с Указанием Банка России от 27 февраля 2014 г. №3194-У). Банковский надзор за деятельностью
+                кредитной организации (ПАО «Норвик Банк», № 902) осуществляет Служба текущего банковского надзора Банка
+                России. Телефоны Контактного центра Центрального банка Российской Федерации: 8 800 300-30-00, +7 499
+                300-30-00, 300 (Бесплатно для абонентов Билайн, Мегафон, МТС, Теле2, Yota). Интернет-приемная Банка
+                России.
+            </p>
+
+
+            <div class="footer__sub">
+                <div class="footer__sub-wrapper">
+                    <p class="footer__sub-text">
+                        © 1990-2021, ПАО «Норвик Банк», Лицензия ЦБ РФ № 902 от 17.07.2015,юридический адрес: Россия,
+                        610000, г.
+                        Киров, ул. Преображенская, 4
+                    </p>
+
+
+                    <ul class="footer__sub-list">
+
+                        <li class="footer__sub-item">
+
+                            <a href="#" class="footer__sub-link">
+                                <img class="footer__sub-img" src="images/svg/VK.svg" alt="Vk">
+                            </a>
+                        </li>
+
+                        <li class="footer__sub-item">
+
+                            <a href="#" class="footer__sub-link">
+                                <img class="footer__sub-img" src="images/svg/Telegram.svg" alt="Telegram">
+                            </a>
+                        </li>
+
+                        <li class="footer__sub-item">
+
+                            <a href="#" class="footer__sub-link">
+                                <img class="footer__sub-img" src="images/svg/Odnoklassniki.svg" alt="Odnoklassniki">
+                            </a>
+                        </li>
+
+                        <li class="footer__sub-item">
+
+                            <a href="#" class="footer__sub-link">
+                                <img class="footer__sub-img" src="images/svg/Dzen.svg" alt="Dzen">
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <button class="footer__sub-btn">
+                        <div class="footer__sub-inner">
+                            <img class="footer__sub-picture" src="images/svg/Icon.svg" alt="Icon">
+
+                            <span class="footer__sub-info">Google Play</span>
+                    </button>
+
+                    <button class="footer__sub-btn">
+
+                        <img class="footer__sub-picture" src="images/svg/Icon2.svg" alt="Icon2">
+
+                        <span class="footer__sub-info">App Store</span>
+                </div>
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <!-- Footer-End -->
+
+</body>
+
+</html>
